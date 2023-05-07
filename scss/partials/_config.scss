@@ -24,20 +24,22 @@ main{
 .container{
     max-width: min(100%, 1400px);
    margin-inline: auto;
-   width:70%;
+   width:80%;
     // to center our container
-@include responsive(1300px){
-    width: 86%;
-}
-@include responsive(1200px) {
-    width: 92%;
-}
-@include responsive(1100px) {
-    width: 100%;
-}
-@include responsive(1000px) {
-    width: 100%;
-}
+    @include responsive(1300px){
+        width: 86%;
+    }
+    @include responsive(1200px) {
+        width: 92%;
+    }
+    @include responsive(1100px) {
+        width: 100%;
+    }
+    @include responsive(1000px) {
+        width: 100%;
+    }
+
+
 
     @include responsive(500px) {
             width: 95%;
