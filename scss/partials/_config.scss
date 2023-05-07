@@ -29,6 +29,15 @@ main{
 @include responsive(1300px){
     width: 86%;
 }
+@include responsive(1200px) {
+    width: 92%;
+}
+@include responsive(1100px) {
+    width: 100%;
+}
+@include responsive(1000px) {
+    width: 100%;
+}
 
     @include responsive(500px) {
             width: 95%;
