@@ -9,7 +9,6 @@ body {
 }
 
 main {
-  height: 100dvh;
   width: 100%;
 }
 @media screen and (max-width: 500px) {
@@ -19,9 +18,14 @@ main {
 }
 
 .container {
-  max-width: min(100%, 1440px);
+  max-width: min(100%, 1400px);
   margin-inline: auto;
   width: 70%;
+}
+@media screen and (max-width: 1300px) {
+  .container {
+    width: 86%;
+  }
 }
 @media screen and (max-width: 500px) {
   .container {

@@ -14,7 +14,7 @@ body{
 }
 // set up our container but first lets continue first
 main{
-    height: 100dvh;
+    // height: ;
     width: 100%;
     @include responsive(500px){
         height: 100%;
@@ -22,11 +22,13 @@ main{
 }
 // .container we include it here
 .container{
-    max-width: min(100%, 1440px);
+    max-width: min(100%, 1400px);
    margin-inline: auto;
    width:70%;
     // to center our container
-
+@include responsive(1300px){
+    width: 86%;
+}
 
     @include responsive(500px) {
             width: 95%;
