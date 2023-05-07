@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+
+
+  <!-- LINK FOR CUSTOM FONTS -->
+  <link rel="preload" href="./Barlow_Semi_Condensed/BarlowSemiCondensed-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./Barlow_Semi_Condensed/BarlowSemiCondensed-Medium.woff2" as="font" type="font/woff2" crossorigin>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <!-- link to custom css -->
+  <link rel="stylesheet" href="./css/main.css">
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head> 
+<body>
+  <main>
+    <!-- First lets start with a home container -->
+    <!-- lets do some more tweaks  -->
+    <div class="container">
+      <!-- We add a div with name card to carry all information in the card -->
+      <!-- lets do some tweaks on our  card division for the coloring lets just add the name of the graduate at every top of the card -->
+        <!-- My way to approach the design i will do some tweaks the container will have two divs one with 4 cards and other with just one -->
+        <!-- .cards div -->
+        <div class="cards">
+          <div class="left">
+            <!-- Our first four divs we bring them here -->
+            <!-- No the layout is now okay  -->
+            <div class="top">
+              <div class="card daniel">
+                <img class="imaged" src="./images/bg-pattern-quotation.svg" alt="">
+                <!-- We have 3 contents let see profile tittle and text -->
+                <div class="profile">
+                  <!-- We mave the image and profile names  and profile validate -->
+                  <div class="img">
+                    <!-- We add the image -->
+                    <img src="./images/image-daniel.jpg" alt="image daniel">
+                  </div>
+                  <div class="profile__info">
+                    <!-- for the profile details lets use p tags -->
+                    <p  class="name">Daniel Clifford</p>
+                    <p class="fade">Verified Graduate</p>
+                  </div>
+                </div>
+                <!-- Thats the layouting of the profile dive lets see how it looks with out css .Lets do the other div-->
+          
+                <div class="text">
+                  <!-- we have a heading and a paragraph -->
+                  <h1>I received a job offer mid-course, and the subjects I learned  were current, if not more so,
+                    in the company I joined. I honestly feel I got every penny’s worth.
+                  </h1>
+                  <p>“ I was an EMT for many years before I joined the bootcamp. I’ve been looking to make a
+                    transition and have heard some people who had an amazing experience here. I signed up
+                    for the free intro course and found it incredibly fun! I enrolled shortly thereafter.
+                    The next 12 weeks was the best - and most grueling - time of my life. Since completing
+                    the course, I’ve successfully switched careers, working as a Software Engineer at a VR startup. ”</p>
+                </div>
+                <!-- Using emmet shortcuts -->
+          
+              </div>
+          
+              <!-- Lets do the other card  We will just  copy the other card and paste and re edit-->
+              <div class="card jonathan">
+                <!-- We have 3 contents let see profile tittle and text -->
+                <div class="profile">
+                  <!-- We mave the image and profile names  and profile validate -->
+                  <div class="img">
+                    <!-- We add the image -->
+                    <img src="./images/image-jonathan.jpg" alt="image jonathan">
+                  </div>
+                  <div class="profile__info">
+                    <!-- for the profile details lets use p tags -->
+                    <!-- we are editting th profile name heading and the paragraphs for all card and also the image -->
+                    <p  class="name">Jonathan Walters</p>
+                    <p class="fade">Verified Graduate</p>
+                  </div>
+                </div>
+                <!-- Thats the layouting of the profile dive lets see how it looks with out css .Lets do the other div-->
+          
+                <div class="text">
+                  <!-- we have a heading and a paragraph -->
+                  <h1>The team was very supportive and kept me motivated
+                  </h1>
+                  <p>“ I started as a total newbie with virtually no coding skills. I now work as a mobile engineer
+                    for a big company. This was one of the best investments I’ve made in myself. ”</p>
+                </div>
+              </div>
+            </div>
+            <div class="bottom">
+              <div class="card jeanette">
+                <!-- We have 3 contents let see profile tittle and text -->
+                <div class="profile">
+                  <!-- We mave the image and profile names  and profile validate -->
+                  <div class="img">
+                    <!-- We add the image -->
+                    <img src="./images/image-jeanette.jpg" alt="image jeanette">
+                  </div>
+                  <div class="profile__info">
+                    <!-- for the profile details lets use p tags -->
+                    <!-- we are editting th profile name heading and the paragraphs for all card and also the image -->
+                    <p  class="name">Jeanette Harmon</p>
+                    <p class="fade">Verified Graduate</p>
+                  </div>
+                </div>
+                <!-- Thats the layouting of the profile dive lets see how it looks with out css .Lets do the other div-->
+          
+                <div class="text">
+                  <!-- lets ad br tags -->
+                  <!-- we have a heading and a paragraph -->
+                  <h1>An overall wonderful and rewarding experience
+                  </h1>
+                  <p>“ Thank you for the wonderful experience! I now have a job I really enjoy, and make a good living
+                    while doing something I love. ”</p>
+                </div>
+              </div>
+              <!-- Card patrick -->
+              <div class="card patrick">
+                <!-- We have 3 contents let see profile tittle and text -->
+                <div class="profile">
+                  <!-- We mave the image and profile names  and profile validate -->
+                  <div class="img">
+                    <!-- We add the image -->
+                    <img src="./images/image-patrick.jpg" alt="image patrick">
+                  </div>
+                  <div class="profile__info">
+                    <!-- for the profile details lets use p tags -->
+                    <!-- we are editting th profile name heading and the paragraphs for all card and also the image -->
+                    <p  class="name">Patrick Abrams</p>
+                    <p class="fade">Verified Graduate</p>
+                  </div>
+                </div>
+                <!-- Thats the layouting of the profile dive lets see how it looks with out css .Lets do the other div-->
+          
+                <div class="text">
+                  <!-- we have a heading and a paragraph -->
+                  <h1>Awesome teaching support from TAs who did the bootcamp themselves. Getting guidance from them and
+                    learning from their experiences was easy.
+                  </h1>
+                  <p>“ The staff seem genuinely concerned about my progress which I find really refreshing. The program
+                    gave me the confidence necessary to be able to go out in the world and present myself as a capable
+                    junior developer. The standard is above the rest. You will get the personal attention you need from
+                    an incredible community of smart and amazing people. ”</p>
+                </div>
+              </div>
+          
+            </div>
+          
+            <!-- Using emmet shortcuts -->
+            <!-- We redo the same until we finish up -->
+          
+          </div>
+          <div class="right">
+            <!-- card kira -->
+            <div class="card kira">
+              <!-- We have 3 contents let see profile tittle and text -->
+              <div class="profile">
+                <!-- We mave the image and profile names  and profile validate -->
+                <div class="img">
+                  <!-- We add the image -->
+                  <img src="./images/image-kira.jpg" alt="image kira">
+                </div>
+                <div class="profile__info">
+                  <!-- for the profile details lets use p tags -->
+                  <!-- we are editting th profile name heading and the paragraphs for all card and also the image -->
+                  <p class="name">Kira Whittle</p>
+                  <p class="fade">Verified Graduate</p>
+                </div>
+              </div>
+              <!-- Thats the layouting of the profile dive lets see how it looks with out css .Lets do the other div-->
+          
+              <div class="text">
+                <!-- we have a heading and a paragraph -->
+                <h1>Such a life-changing experience. Highly recommended!
+                </h1>
+                <p>“ Before joining the bootcamp, I’ve never written a line of code. I needed some structure from
+                  professionals who can help me learn programming step by step. I was encouraged to enroll by a former
+                  student of theirs who can only say wonderful things about the program. The entire curriculum and staff
+                  did not disappoint. They were very hands-on and I never had to wait long for assistance. The agile team
+                  project, in particular, was outstanding. It took my learning to the next level in a way that no tutorial
+                  could ever have. In fact, I’ve often referred to it during interviews as an example of my developent
+                  experience. It certainly helped me land a job as a full-stack developer after receiving multiple offers.
+                  100% recommend! ”</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+
+
+     
+    </div>
+
+    <!-- I did a fast forward on copy and pasting the division layouting and editing some tof the details. -->
+    <!-- We have finished the layouting lets see it without the css -->
+    <!-- for visibility lets assign colors  to  the cards according to their names -->
+  </main>
+  
+  
+
+
+
+
+  
+  
+
+  
+
+
+
+ 
+
+  
+
+  
+
+  
+
+
+
+  
+
+
+  
+
+  
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Githu  Kelvin</a>.
+  </div>
+</body>
+</html>

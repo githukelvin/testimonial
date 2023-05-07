@@ -1,0 +1,336 @@
+// Lets use colors
+@use "./colors" as *;
+// lets use fonts
+@use "./fontt" as *;
+@use "./mixin" as *;
+
+//we have finished on coloring lets start styling our layouts.
+
+// We nest three two divs
+.cards{
+    // has
+    display: grid;
+    grid-template-columns: 1fr 250px;
+    
+    // gap: 1em;
+    margin-top:10.2em;
+    // To center our container
+    // lets look our
+    @include responsive(500px){
+        grid-template-columns: 1fr;
+        margin-top: 4.5em;
+        gap: 1.5em;
+        margin-inline: auto;
+    }
+    .left{ 
+        display: grid;
+        gap:1.3em;
+        width: 600px;
+        @include responsive(500px){
+            width: 100%;
+            // gap: 0em
+        }
+
+         .top{
+        display: grid;
+        grid-template-columns: 1.1fr .5fr;
+        gap: 2.5em;
+        height: fit-content;
+        @include responsive(500px){
+            grid-template-columns: 1fr;
+            width: 100%;
+            gap: 1.5em;;
+            margin-inline:auto;
+        }
+        .card {
+            .text{
+                h1{}
+                p{
+                    // line-height: ;
+                    margin-top: .2em;
+                }
+            }
+        }
+
+    }
+        .bottom {
+             display: grid;
+             grid-template-columns: .5fr 1.1fr;
+             gap: 3em;
+             height: fit-content;
+            //  margin-top: 8px;
+            @include responsive(500px) {
+                    grid-template-columns: 1fr;
+                    width: 100%;
+                    gap: 1.5em;
+                }
+
+             .card{
+                .text{
+                    h1{
+                     padding-top: .2em;  
+                    }
+                }
+             }
+    
+    }
+}
+    .right{
+        display: grid;
+        grid-template-rows: 1fr;
+
+    }
+    .card{
+        // The card has a padding around it.
+        
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        border-radius: 10px;
+        position: relative;
+        @include  responsive(500px){
+            width: 91%;
+            margin-inline:auto;
+            padding-bottom: 1.9em;
+        }
+        .imaged{
+            position: absolute;
+            // z-index: -11;
+            top: 0;
+            right:80px;
+            width: 100px;
+            object-fit: contain;
+            @include responsive(500px){
+                right: 20px;
+                width: 105px;
+            }
+        }
+        
+        .profile{
+            display: flex;
+            flex-direction: row;
+            gap: 1em ; 
+            align-items: center;   
+            margin-top: -13px;  
+            // image
+            .img{
+                width: 29px;
+                height: 29px;
+                
+                img{
+                   width: 100%;//i think this seems close to our design
+                   object-fit: contain;
+                   border-radius: 50%; 
+                }
+            }
+            .profile__info{
+                // margin-top: -5px;
+                .name{
+                    color: $Lightgrayishblue;
+                    font-family:"medium";
+                    font-size: .8em;
+                    font-weight: 500;
+                 }
+                .fade{
+                    font-family: "medium";
+                    color: rgba($Lightgray, .5);
+                    font-size: .7em;
+                    font-weight: 400;
+                }
+            }
+         }
+
+         .text{
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+            width: 100%;
+            position: relative;
+            z-index: 2;
+            h1 {
+                font-family: "semibold";
+                font-size: 1.2em;
+                color: $White;
+                width: 100%;
+                
+                letter-spacing: .2px;
+            }
+            p{
+                font-family: "medium";
+                font-size: .8em;
+            }
+         }
+    }
+}
+.daniel  {
+    background: $Moderateviolet;
+    padding: 2.3em 2em 0em ;
+    width: 540px;
+    @include responsive(500px) {
+            width: 100%;
+             padding:2.3em 1em 0em 2em;
+
+        }
+  .text{
+    h1{
+        padding-top: .2em;
+        width: fit-content;
+        @include responsive(500px){
+            padding-right: .7em;
+        padding-top: .33em;
+        word-spacing: 1px;
+            text-align: left;
+        }
+        word-spacing: 1px;
+    }
+    p{
+        margin-top: -.1em;
+        word-spacing: .5px;
+        color: rgba($Lightgray, .5);
+        @include responsive(500px){
+            padding: 0em 2em 0em 0em;
+        }
+    }
+  }
+    .profile .img{
+        border: 2px solid hsl(263deg 100% 73.65%); 
+        //rgba($Moderateviolet, .3);
+        border-radius: 50%;
+    }
+}
+
+.jonathan {
+    background: $Verydarkgrayishblue;
+    padding: 2.4em 2.1em 2em;
+    width: 256px;
+    margin-left:-.8em;
+    @include responsive(500px) {
+           margin-left: 0;
+        }
+    .text{
+        h1{
+        padding-top: .2em;
+        word-spacing: .9px;
+        @include responsive(500px){
+            word-spacing: .3px;
+        }
+       
+        }
+        p {
+        word-spacing: .5px;
+        margin-top: -.24em;
+        color: rgba($Lightgray,1);
+        @include responsive(500px){
+            width: 105%;
+            margin-left: -.4em;
+        }
+
+        }
+    }
+}
+
+.patrick {
+    background: $Verydarkblackishblue;
+    margin-left: -1.15em;
+    padding: 2.4em 2em 1.6em ;
+    width: 540px;
+    height: fit-content;
+    @include responsive(500px) {
+            width: 100%;
+            margin-left: 0;
+            padding:2.4em 2em 3em;
+        }
+    .profile .img{
+        border: 2px solid $Moderateviolet;
+        border-radius: 50%;
+    }
+    .text {
+        h1{
+            // margin-bottom: .5em;
+            word-spacing:1px;
+            line-height: 1.3;
+            padding-bottom: .3em;
+            @include  responsive(500px){
+                line-height: 1.2;
+            padding-bottom: .06em;
+            }
+         
+        }
+       p{
+        width:97%;
+        word-spacing: .5px;
+                    color: rgba($Lightgray,1);
+       }
+    }
+   
+}
+.jeanette{
+    width:256px;
+    padding: 2.3em 2em 0em;
+    background: #000;
+    h1{
+        width: 90%;
+        margin-top:-.05em ;
+        line-height: 1.2;
+        letter-spacing: 0px;
+        padding-bottom: .37em;
+        @include responsive(500px){
+            padding-bottom: .1em;
+        }
+       
+    }
+}
+.kira{
+    padding:2.5em  1.8em 1.5em ;
+}
+.jeanette,
+
+.cards .card .text p,.kira .text p {
+    line-height: 1.41;
+}
+.kira {
+    background: $White;
+    height: fit-content;
+    .text{
+        width: 100%;
+        h1{
+            padding-bottom:.3em ;
+            line-height: 1.3;
+            @include responsive(500px)
+            {
+                line-height: 1.4;
+                padding-bottom: 0em;
+            }
+        }
+        p{
+            width: 100%;
+            line-height: 0;
+            font-size: .5em;
+        }
+    }
+}
+.cards{
+    .jeanette,
+        .kira {
+            background: $White;
+            .profile .profile__info {
+                    .name {
+                        color:$Verydarkblackishblue;
+                    }
+                }
+            .text {
+                h1 {
+                    color: $Verydarkgrayishblue;
+                }
+            p{
+                    color:rgba($Verydarkgrayishblue, $alpha: 0.7);
+                    // It looks this color is new what we want
+                }
+            }
+        }
+}
+.attribution{
+    margin-top: 3em;
+}
+//  didn't say this first but i use scss since it easy and code reuse  and nesting
+// we have started our scss watch extension

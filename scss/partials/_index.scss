@@ -1,0 +1,5 @@
+@forward "./config";
+@forward "./fontt";
+@forward "./card";
+@use "./colors" as *;
+// @forward it helps us to call all the styling made in a different file @use we can be able to use the styles somewhere else.
