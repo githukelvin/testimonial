@@ -27,13 +27,13 @@ main{
    width:75%;
     // to center our container
     @include responsive(1300px){
-        width: 86%;
+        width: 83%;
     }
     @include responsive(1200px) {
         width: 92%;
     }
     @include responsive(1100px) {
-        width: 100%;
+        width: 95%;
     }
     @include responsive(1000px) {
         width: 100%;
